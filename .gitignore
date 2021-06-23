@@ -127,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+.idea
+/.idea/
+/part04-image-processing/data/

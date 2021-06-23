@@ -13,29 +13,36 @@ Pytorch 简介
 * 一、Pytorch 介绍
   1. Pytorch 基础 （张量和向量）
   2. Pytorch 数据集
+  3. transform 数据转化
+  4. autograd 自动求导
   
 
+* 二、机器学习
+  
 
-Pytorch 基础
-张量，向量，数据集，...
+* 三、神经网络
 
-CNN
+  * CNN 卷积神经网络
+  * RNN
+  * LSTM
+  * MLP
+  * GAN 对抗神经网络
+    
+* 四、图像处理应用场景
 
-RNN
+* 五、自然语言处理 NLP
+    * 预训练语言模型 GPT2
 
-... 
+* 六、音频处理场景 
 
-应用：
+* 七、优秀的案例
 
-imagenet  ResNet
+    * [Yolo v5 目标检测](https://github.com/ultralytics/yolov5)
 
-自然语言处理
 
-图像处理
 
-预训练语言模型 GPT2
- 
-学习方法：
-  PyTorch 官方 tutorial
-  PyTorch 论坛 
 
+
+ ##  好的学习链接
+
+* [Pytorch 官方tutorial ](https://pytorch.org/tutorials/)

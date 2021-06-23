@@ -1,6 +1,21 @@
 # Pytorch 的介绍和应用
 
+ 
+ 1. Pytorch 基础 （张量和向量）
+ 2. Pytorch 数据集
+ 3. transform 数据转化
+ 4. autograd 自动求导
+ 5. nn.functional 和 nn.Module 
+
+
 ## Tensor的使用
+
+#### PyTorch由4个主要包组成
+
+* torch：类似于Numpy的通用数组库，可将张量类型转换为torch.cuda.TensorFloat，并在GPU上进行计算。
+* torch.autograd：用于构建计算图形并自动获取梯度的包。
+* torch.nn：具有共享层和损失函数的神经网络库。
+* torch.optim：具有通用优化算法（如SGD，Adam等）的优化包。
 
 ### Tensor的数据类型
 
@@ -25,11 +40,26 @@
     * Tensor ----> 单个Python数据，使用data.item()，data为Tensor变量且只能为包含单个数据
     * Tensor ----> Python list，使用data.tolist()，data为Tensor变量，返回shape相同的可嵌套的list
 
-### 特殊tensor
+###  Tensor的创建
 
-* torch.zeros
-* torch.ones
-* torch.arange 根据start与stop指定的范围以及step设定的步长，生成一个array
+|函数|描述|
+|:----|:----|
+| Tensor | 直接从参数构造一个张量，支持list，ndarray
+| eye(row,column) | 创建指定行数，列数的二维单位tensor
+| linspace(start,end,step) | 从step到end，均匀切分成 steps份
+| logspace(start,end,step) | 10^step 到 10^end，均匀切分steps份
+| rand / randn(*size) | 生产[0,1) 均匀分布/标准正态分布数据
+| ones(*size) | 返回指定shape的张量，元素初始为1
+| zeros(*size) | 返回指定的shape的张量，元素初始为0
+| ones_like(t)| 返回t的shape的张量，元素初始为1
+| zeros_like(t)| 返回t的shape的张量，元素初始为0
+| arrange(start,end,step)| 在区间[start，end]上以间隔step生成一个序列张量
+| from_numpy(ndarray) | 从ndarray创建tensor
+
+> 【说明】注意torch.Tensor与torch.tensor的几点区别
+1. torch.Tensor是torch.empty和torch.tensor之间的一种混合，但是，当传入数据时，torch.Tensor使用全局默认dtype（FloatTensor），torch.tensor从数据中推断数据类型。
+2. torch.tensor(1)返回一个固定值1，而torch.Tensor(1)返回一个大小为1的张量，它是随机初始化的值。
+
 
 ## Tensor的比较
 > Tensor本身就可以进行一些比较, 更详细的资料大家可以去阅读官方文档。
