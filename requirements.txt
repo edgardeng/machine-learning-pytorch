@@ -1,0 +1,4 @@
+torch==1.9.0
+torchtext==0.10.0
+jupyter==1.0.0
+jupyter-client==7.0.2
