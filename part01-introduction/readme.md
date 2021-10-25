@@ -6,6 +6,7 @@
  3. transform 数据转化
  4. autograd 自动求导
  5. nn.functional 和 nn.Module 
+ 6. 激活函数 Activation Function
 
 
 ## Tensor的使用
