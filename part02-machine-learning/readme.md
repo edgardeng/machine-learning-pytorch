@@ -13,6 +13,29 @@
 
 ### 特征提取方法
 
+## 学习目录
+
+1. [Linear Regression](2_1_linear_regression.ipynb)
+
+2. [Logistic Regression](2_2_logistic_regression.ipynb)
+   
+3. [K Nearest Neighbours](2_3_KNN.ipynb)
+
+4. [SVM](2_6_svm.ipynb)
+
+5. [Naive Bayes](2_3_naive_bayes.ipynb)
+
+6. [Decision Trees ](2_4_decision_trees.ipynb)
+
+7. [Random Forest](2_5_random_forest.ipynb)
+
+8. [K-Means](2_7_kmeans.ipynb)
+
+9. [Perceptron 感知机](2_9_perceptron.ipynb)
+
+10. [GBDT 梯度提升树](2_10_gbdt.ipynb) Gradient Boosting Decision Tree
+
+11. [XGBoost  极度梯度提升树](2_11_xgboost.ipynb) eXtreme Gradient Boosting 
 
 ##  十大经典机器学习算法
 [](https://blog.csdn.net/jrunw/article/details/79205322)
